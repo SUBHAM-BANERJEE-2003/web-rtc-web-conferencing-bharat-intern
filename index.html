@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="icon.png" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>MeetingsWithSubham</title>
+</head>
+
+<body class="main-body">
+  <nav class="main-navbar">
+    <div class="icon-space">
+      <img class="icon-img" src="icon.png" loading="lazy" />
+      <span class="company">MeetingsWithSubham</span>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Billings</a></li>
+    </ul>
+  </nav>
+  <h2>Welcome to Subham Meetings(A 2-on-2 Video and Chatting platform)</h2>
+  <div class="videos">
+    <span>
+      <h3>Person 1</h3>
+      <video id="webcamVideo" autoplay playsinline></video>
+    </span>
+    <span>
+      <h3>Person 2</h3>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </span>
+
+
+  </div>
+
+  <button id="webcamButton">Start webcam</button>
+  <button id="togglevideobtn"><i class="fa fa-video-camera" aria-hidden="true"></i></button>
+  <button id="togglemicbtn"><i class="fa fa-microphone" aria-hidden="true"></i></button>
+  <button id="callButton" disabled>Create Room Id</button>
+  <input class="styled-input" size="20" id="callInput" />
+  <button id="answerButton" disabled><i class="fa fa-phone" aria-hidden="true"></i></button>
+  <button id="hangupButton" disabled>Hangup <i class="fa fa-phone-square" aria-hidden="true"></i></button>
+  <div class="container">
+    <div class="chat-bar">
+
+      <div class="chat-header">
+        <h2>Chat</h2>
+        <button class="close-button">&times;</button>
+      </div>
+      <div class="chat-content">
+        <div class="chat-messages">
+           
+        </div>
+      </div>
+      <div class="chat-input-box">
+        <input type="text" class="chat-input" placeholder="Type a message"/>
+        <button class="send-button">Send</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

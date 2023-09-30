@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-body{
+  background-color: #a59d9d;
+}
+/* Style the main navigation bar */
+.main-navbar {
+  background-color: #333; /* Background color for the navigation bar */
+  color: white; /* Text color for navigation items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  padding-top: 10px; /* Adjust or remove as needed */
+  padding-bottom: 10px;
+}
+
+/* Style the company name */
+.company {
+  font-size: 24px; /* Adjust font size as needed */
+  display: flex;
+  align-items: center; /* Vertically center the logo and company name */
+}
+
+/* Style the navigation links */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Add spacing between list items */
+}
+
+li {
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+}
+
+/* Style the icon */
+.icon-img {
+  width: 32px; /* Set the desired width for the icon */
+  height: 32px; /* Set the desired height for the icon */
+  margin-right: 10px; /* Add some space between the icon and company name */
+}
+
+/* Style the icon */
+.icon-img {
+  width: 32px; 
+  height: 32px; 
+  margin-right: 10px; 
+}
+
+body {
+  font-family: 'Syne Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #24282c;
+  margin: 10px, 10px;
+}
+
+video {
+  width: 40vw;
+  height: 30vw;
+  margin: 2rem;
+  background: #2c3e50;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#webcamButton{
+  display: inline-block;
+  padding: 12px 24px; 
+  background-color: #3498db; 
+  color: #fff; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+#webcamButton:hover {
+  background-color: #2980b9; 
+}
+
+#answerButton{
+  display: inline-block;
+  padding: 12px 24px; 
+  margin-top: 10px;
+  background-color: rgb(30, 246, 30); 
+  color: #fff; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+#answerButton:hover {
+  background-color: green; 
+}
+
+#togglevideobtn{
+  margin-left: 15px;
+  padding: 12px 24px; 
+  background-color: white; 
+  color: black; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+#togglevideobtn:hover {
+  background-color: rgb(216, 36, 36); 
+}
+
+#togglemicbtn{
+  margin-left: 15px;
+  padding: 12px 24px; 
+  background-color: white;
+  color: black; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+#togglemicbtn:hover {
+  background-color: rgb(216, 36, 36); 
+}
+
+#hangupButton{
+  display: block;
+  padding: 12px 24px; 
+  margin-left: 50%;
+  margin-top: 15px;
+  background-color: red; 
+  color: #fff; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+#hangupButton:hover {
+  background-color: rgb(241, 108, 108); 
+}
+
+#callButton{
+  display: block;
+  padding: 12px 24px; 
+  margin-left: 50%;
+  margin-top: 15px;
+  background-color: rgb(255, 0, 242); 
+  color: #fff; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+#callButton:hover {
+  background-color: rgb(237, 9, 233); 
+}
+
+/* Style the input */
+.styled-input {
+  width: 200px; /* Set the desired width */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Font size */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove the outline on focus */
+}
+
+/* Add hover effect */
+.styled-input:hover {
+  border-color: #3498db; /* Border color on hover */
+}
+
+/* Add focus effect */
+.styled-input:focus {
+  border-color: #3498db; /* Border color on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Box shadow on focus */
+}
+
+.container {
+  position: relative;
+
+}
+
+
+.chat-bar {
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+}
+
+.chat-header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.chat-header h2 {
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-content {
+  padding: 10px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  max-height: 300px; /* Limit the height to create a scrollable chat area */
+  overflow-y: auto; /* Enable vertical scrolling for overflow */
+  padding: 10px; /* Add some padding to the chat messages */
+}
+
+.chat-messages div {
+  background-color: rgb(105, 255, 118); /* Background color for chat messages */
+  border-radius: 5px; /* Rounded corners for chat message containers */
+  margin-bottom: 5px; /* Add spacing between chat messages */
+  padding: 8px 12px; /* Padding within chat message containers */
+  font-size: 16px; /* Font size for chat messages */
+}
+
+/* Style for the sender's name (person-1 or person-2) */
+.chat-messages .sender-name {
+  font-weight: bold; /* Make the sender's name bold */
+  margin-right: 5px; /* Add spacing between sender's name and message text */
+}
